@@ -29,7 +29,6 @@ function start() {
         console.log(res);
         promptCust(res);
 
-
     })
 
 }
@@ -43,7 +42,7 @@ function promptCust(res) {
             message: "What is the ID of the product you would like to purchase?"
         }]).then(async function(input) {
             var stuff = parseInt(input.item)
-            console.log(stuff, "46");
+                // console.log(stuff, "46");
             var product = await inventoryCheck(res, stuff);
             console.log(product)
             promptQuant(product);
@@ -63,7 +62,6 @@ function inventoryCheck(res, input) {
     }
     return null;
 }
-
 
 function promptQuant(res) {
 
