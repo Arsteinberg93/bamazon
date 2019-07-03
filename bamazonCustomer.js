@@ -90,8 +90,6 @@ function makePurchase(res1, input) {
         if (err) throw err;
         console.log("Successfully purchased $" + input * res1.price)
 
-
-
     })
 
 }
